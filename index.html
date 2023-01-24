@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/social-media.css">
+    <link rel="stylesheet" href="./css/custom.css">
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <div id="contenido" class="pb-10">
+            <header class="bg-teal-500 text-white py-3 font-bold uppercase">
+                <h1 class="text-center">Cotizador de seguros de autom&oacute;viles</h1>
+            </header>
+                <form class="mt-10 max-w-lg mx-auto" action="#" id="cotizar-seguro">
+                        <div class="flex items-center mb-5">
+                            <label 
+                              class="font-bold  uppercase mr-2 w-20"
+                              for="marca"
+                            >Marca:</label>
+                            <select class="flex-1 bg-gray-100 p-3 appearance-none" id="marca">
+                                <option value="">- Seleccionar -</option>
+                                <option value="1">Ford</option>
+                                <option value="2">Toyota</option>
+                                <option value="3">Audi</option>
+                            </select>
+                        </div>
+                        <div class="flex items-center mb-5">
+                              <label 
+                                class="font-bold  uppercase mr-2 w-20"
+                                for="year"
+                              >Año:</label>
+                              <select  class="flex-1 bg-gray-100 p-3 appearance-none" id="year"></select>
+                        </div>
+                        <fieldset>
+                              <legend  class="font-bold  uppercase text-2xl text-center w-full">Tipo Seguro</legend>
+
+                              <div class="flex justify-around mt-5">
+                                  <div>
+                                      <label class="font-bold  uppercase mr-2">Contra terceros</label>
+                                          <input type="radio" name="tipo" value="basico" checked>
+                                      </label>
+                                  </div>
+                                  <div>
+                                      <label class="font-bold  uppercase mr-2">Contra todo riesgo</label>
+                                          <input type="radio" name="tipo" value="completo">
+                                      </label>
+                                  </div>
+                              </div>
+                      </fieldset>
+
+                  <div id="cargando" class="hidden">
+                        <div class="spinner">
+                          <div class="rect1"></div>
+                          <div class="rect2"></div>
+                          <div class="rect3"></div>
+                          <div class="rect4"></div>
+                          <div class="rect5"></div>
+                      </div>
+                  </div>
+                  <div id="resultado"></div>
+                  <div class="flex  justify-center py-4">
+                      <button 
+                        type="submit" 
+                        class="mx-auto bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-20 rounded"
+                        >Cotizar Seguro
+                    </button>
+                  </div>
+ 
+                </form> 
+      </div> <!--#contenido-->
+</div>
+
+<!-- SOCIAL PANEL HTML -->
+    <div class="social-panel-container">
+      <div class="social-panel">
+        <p>
+          Created with <i class="fa fa-heart"></i>
+          by
+          <a target="_blank" href="#">fidelgnz</a>
+        </p>
+        <button class="close-btn"><i class="fas fa-times"></i></button>
+        <!-- <h4>Social Media</h4> -->
+        <ul>
+          <li>
+            <a
+              href="https://twitter.com/facevedognz"
+              target="_blank"
+              class="twitter"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/acevedofidel"
+              target="_blank"
+              class="github"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <button class="floating-btn">Social Media</button>
+
+    
+
+  <script src="./js/app.js"></script>
+  <script src="./js/social-media.js"></script>
+  </body>
+</html>
